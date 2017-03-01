@@ -1,7 +1,6 @@
 // Andrey Oliveira
 /*
 This sketch is to make a wave appear upon click and attempt to add the waves together
-Still under work.
 */
 oneWave [] onewave = new oneWave[1];
 AIwave [] AIWave = new AIwave [1];
@@ -18,6 +17,7 @@ void setup(){
 }
 
 void draw(){
+  translate(0, height/2);
   background(145);
   for(int i =0; i<onewave.length;i++){
     onewave[i].show();
@@ -47,6 +47,6 @@ void draw(){
  
 }
   float update(float aiy ,float owy){
-  ny = aiy - owy;
+  ny = aiy + owy;
   return ny;
   }

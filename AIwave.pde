@@ -23,15 +23,15 @@ class AIwave{
     stroke(0);
     fill(0);
     beginShape(LINES);
-    vertex(width, height/2);
-    vertex(x+50,height/2);
+    vertex(width, 0);
+    vertex(x+50,0);
     endShape(CLOSE);
     beginShape(LINES);
-    bezier(x+50,height/2,x,y,x,y,x-50,height/2);
+    bezier(x+50,0,x,y,x,y,x-50,0);
     endShape(CLOSE);
     beginShape(LINES);
-    vertex(x-50,height/2);
-    vertex(0,height/2);
+    vertex(x-50,0);
+    vertex(0,0);
     endShape(CLOSE);
     
   }

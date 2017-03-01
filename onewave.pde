@@ -21,15 +21,15 @@ class oneWave{
       //line(x[0],y[0],width,height/2);
     //}
      beginShape(LINES);
-     vertex(0,height/2);
-     vertex(x-50,height/2);
+     vertex(0,0);
+     vertex(x-50,0);
      endShape(CLOSE);
      beginShape(LINES);
-     bezier(x-50,height/2,x,y,x,y,x+50,height/2);
+     bezier(x-50,0,x,y,x,y,x+50,0);
      endShape(CLOSE);
      beginShape(LINES);
-     vertex(x+50,height/2);
-     vertex(width,height/2);
+     vertex(x+50,0);
+     vertex(width,0);
      endShape(CLOSE);
     
   }
@@ -37,7 +37,7 @@ void click(){
   if(x>width){
     x = 0;
   }
- y = mouseY;
+ y = mouseY-height/2;
 
 }
 
